@@ -1,0 +1,338 @@
+CREATE TABLE CLASS (
+CLA_CODE  VARCHAR(20) ,
+CLA_NAME  VARCHAR(20),
+primary key(CLA_CODE)
+);
+
+CREATE TABLE SINGER (
+SIN_CODE   VARCHAR(20),
+CLA_CODE   VARCHAR(20),
+SIN_NAME   VARCHAR(20),
+SIN_BIRTH  VARCHAR(100),
+SIN_DEBUT  DATETIME,
+SIN_ALB    VARCHAR(1000),
+SIN_INTRO  VARCHAR(2000),
+PRIMARY KEY(SIN_CODE),
+FOREIGN KEY(CLA_CODE) REFERENCES CLASS
+);
+
+CREATE TABLE ALBUM (
+ALB_CODE  VARCHAR(20) ,
+SIN_CODE  VARCHAR(20) ,
+ALB_NAME  VARCHAR(60),
+ALB_DATE   DATETIME,
+ALB_PRICE  INT,
+PRIMARY KEY (ALB_CODE),
+FOREIGN KEY(SIN_CODE) REFERENCES SINGER
+);
+
+CREATE TABLE SONG (
+SONG_CODE  VARCHAR(20),
+ALB_CODE   VARCHAR(20),
+SONG_NAME  VARCHAR(50),
+SONG_LENGHT VARCHAR(10), 
+PRIMARY KEY(SONG_CODE),
+FOREIGN KEY (ALB_CODE) REFERENCES ALBUM
+);
+
+CREATE TABLE Misic1(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic2(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic3(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic4(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic5(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic6(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic7(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic8(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+
+
+CREATE TABLE Misic9(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic10(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic11(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic12(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic13(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic14(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic15(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+CREATE TABLE Misic16(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic17(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic18(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+CREATE TABLE Misic19(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+CREATE TABLE Misic20(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+CREATE TABLE Misic21(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+CREATE TABLE Misic22(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+CREATE TABLE Misic23(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+
+CREATE TABLE Misic24(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic25(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic26(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic27(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic28(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic29(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic30(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+CREATE TABLE Misic31(
+	FileName  nchar(50),
+	MusicData varbinary(max)
+)
+GO
+
+INSERT INTO CLASS VALUES('W001','Adele');
+INSERT INTO CLASS VALUES('W002','Akon');
+INSERT INTO CLASS VALUES('W003','BonJovi');
+INSERT INTO CLASS VALUES('W004','Maroon5');
+INSERT INTO CLASS VALUES('W005','Ne-Yo');
+INSERT INTO CLASS VALUES('W006','Nicki Minaj');
+INSERT INTO CLASS VALUES('W007','Pitbull');
+INSERT INTO CLASS VALUES('W008','Usher');
+INSERT INTO CLASS VALUES('W009','Flo Rida');
+INSERT INTO CLASS VALUES('W010','Mariah Carey');
+
+INSERT INTO SINGER VALUES('A001','W001','Adele','May-5-1988','2008','Hometown Glory(2007)''Pavements(2008)''19(2008)''Cold Shoulder(2008)''21(2011)''Set Fire To The Rain(2011)''Live at The Royal Albert Hall(2011)''Skyfall(2012)','Adele is an English singer and songwriter. Her full name is Adele Laurie Blue Adkin but she is known as Adele. She was born England on 5 may 1988.One of her friends posted her demos on Myspace which led her to sign a contract with XL Recordings in 2006. Her career was boosted in the US when she performed in a Saturday Live show in late 2008. In 2008 she received the Brit Awards ¡¨ Critics¡¦ Choice¡¨ and won the BBC Sound of 2008. Her debut album ¡§19¡¨ was also released in 2008.');
+INSERT INTO SINGER VALUES('A002','W002','Akon','April-16-1973','1996','Locked Up(2004)''Bananza (Belly Dancer)(2005)''Trouble(2005)''Smack That(2006)''Konvicted(2006)''Smack That (NBA)(2007)''Dont Matter(2007)''I Wanna Love You(2007)''Right Now (Na Na Na)(2008)''Beautiful(2009)''Freedom(2009)''Oh Africa(2010)''Hurt Somebody(2012)''So Blue(2013)','Better known by his stage name Akon (pronounced /?e?k?n/), is an American R&B and hip hop recording artist, songwriter, businessman , and record producer.[2] He rose to prominence in 2004 following the release of "Locked Up", the first single from his debut album Trouble.');
+INSERT INTO SINGER VALUES('B001','W003','BonJovi','March-2-1962(Bon Jovi)''July-11-1960(Richie Sambora)''October-7-1953(Tico Torres)''FEBRUARY-7-1961(David Bryan)','1983','Bon Jovi(1984)''7800 Fahreheit(1985)''Slippery When Wet(1986)''New Jersey(1988)''Blaze Of Glory(1990)''Keep The Faith(1992)''Cross Road(1994)''These Days(1995)''Destination Anywhere(1997)''Crush(2000)''Bounce(2002)''Have A Nice Day(2005)''Lost Highway(2007)''The Circle(2009)''Bon Jovi Greatest Hits(2010)''What About Now(2013)','Bon Jovi is an American rock band from Sayreville, New Jersey. Formed in 1983, Bon Jovi consists of lead singer and namesake Jon Bon Jovi, guitarist Richie Sambora, keyboardist David Bryan, drummer Tico Torres, former bassist Alec John Such, as well as current bassist Hugh McDonald.');
+INSERT INTO SINGER VALUES('M001','W004','Maroon5','March-18-1979(Adam)''October-5-1978(James)''April-2-1979(Jesse)''May-13-1979(Mickey)''September-19-1977(Ryan)','2001','Songs About Jane(2002)''It Wont Be Soon Before Long(2007)''Hands All Over(2010)''Overexposed(2012)''V(2014)','Maroon 5 is an American pop rock band that originated in Los Angeles, California.[7][8] Before the group was formed Adam Levine and the original four members of then 1994 band were known as Karas Flowers while its members were still in high school and originally consisted of Adam Levine (lead vocals, guitar), Jesse Carmichael (guitar, backing vocals) Mickey Madden (bass guitar) and Ryan Dusick (drums).');
+INSERT INTO SINGER VALUES('N001','W005','Ne-Yo','October-18-1979)','1998','So Sick(2006)''In My Own Words(2006)''Sexy Love(2006)''Stay(2006)''Because Of You(2007)''Can We Chill(2007)''Closer(2008)''Year Of The Gentleman(2008)''Single(2008)''Beautiful Monster(2010)''One In A Million(2010)''Libra Scale(2010)''The Way You Move(2011)''Lazy Love(2012)''Let Me Love You (Until You Learn To Love Yourself)(2012)''Dont Make Em Like You(2012)''R.E.D.(2012)''Money Cant Buy (feat. Jeezy)(2014)''She Knows (feat. Juicy J)(2014)''Coming With You(2015)''Religious(2015)''One More (feat. T.I.)(2015)''Non-Fiction(2015)''Every Day With Love(2015)','Better known by his stage name Ne-Yo, is an American R&B singer, songwriter, record producer, dancer, and actor. Ne-Yo gained fame for his song-writing abilities when he penned the 2004 hit "Let Me Love You" for singer Mario. The singles successful release in the United States prompted an informal meeting between Ne-Yo and Def Jams label head, and the signing of a recording contract.');
+INSERT INTO SINGER VALUES('N002','W006','Nicki Minaj','December-8-1982','2010','Your Love (Explicit Version)(2010)''Pink Friday(2010)''Girls Fall Like Dominoes(2011)''Super Bass(2011)''Roman In Moscow(2011)''Stupid Hoe (2011)''Stupid Hoe(2012)''Starships(2012)''Roman Reloaded(2012)''Pink Friday ... Roman Reloaded(2012)''The Boys(2012)''Freedom(2012)''Pink Friday: Roman Reloaded(2012)''Pills N Potions(2014)''Anaconda(2014)''Only (feat. Drake, Lil Wayne & Chris Brown)(2014)''Bed Of Lies (feat. Skylar Grey)(2014)''All Things Go(2014)''The Pinkprint(2014)''Truffle Butter(2015)','Better known by her stage name Nicki Minaj /m??n???/, is a Rap and R&B recording artist who rose to fame after becoming a member in rapping group Young Money. She was born in Saint James, Trinidad and Tobago, but moved to the Queens borough of New York City as a child and graduated from LaGuardia High School in 2003.');
+INSERT INTO SINGER VALUES('P001','W007','Pitbull','1981','2004','Krazy(2009)''Hotel Room Service(2009)''Pitbull Starring In Rebelution(2009)''Rebelution(2009)''Shut It Down (feat. Akon)(2009)''Pearly Gates(2010)''Hey Baby (Drop It To The Floor)(2010)''Armando(2010)''Watagatapitusberry (feat. Lil Jon, Sensato, Black Point & El Cata)(2011)''Give Me Everything: The Remixes(2011)''Planet Pit(2011)''Pause(2011)''Planet Pi(2011)''International Love Remixes(2012)''I Like - The Remix(2012)''Back in Time(2012)''Get It Started [feat. Shakira](2012)''Echa Palla (Manos Parriba)(2012)''I Am Armando (Armando Reloaded)(2012)''Dont Stop The Party (feat. TJR)(2012)''Global Warming(2012)''Feel This Moment Remixes (feat. Christina Aguilera)(2012)''Echa Palla (Manos Parriba)(2012)''I Know You Want Me (Calle Ocho)(2013)''Timber (feat. Ke$ha)(2013)''Meltdown EP(2013)''Noche No Termina(2013)''Wild Wild Love (feat. G.R.L.)(2014)''We Are One (Ole Ola) [The Official 2014 FIFA World Cup Song] (feat. Jennifer Lopez & Claudia Leitte)(2014)''Fireball (feat. John Ryan)(2014)''Celebrate (from the Original Motion Picture Penguins of Madagascar)(2014)''Globalization(2014)''Piensas (Dile la Verdad) [feat. Gente De Zona](2014)''Como Yo Le Doy (feat. Don Miguelo)(2015)''El Taxi (feat. Sensato & Osmani Garcia)(2015)''Baddest Girl in Town (feat. Mohombi & Wisin)(2015)','Better known by his stage name Pitbull, is an American rapper. His first recorded mainstream performance was on a solo track from Lil Jons 2002 album Kings of Crunk, which featured Pitbull rapping over Jons production. In 2004, Pitbull released his debut album titled M.I.A.M.I. (short for Money Is A Major Issue), under TVT Records; the album included production from high-profile producers Lil Jon and Jim Jonsin.');
+INSERT INTO SINGER VALUES('U001','W008','Usher','October-14-19781 ','1991','Usher(1994)''My Boo / Confessions Part II Remix(1998)''Live(1999)''8701(2001)''Yeah!(2004)''Confessions(2004)''My Way/8701(2005)''Usher Presents In The Mix Original Soundtrac(2005)''Here I Stand(2008)''Love In This Club(2008)''Moving Mountains(2008)''Trading Places(2008)''There Goes My Baby(2010)''OMG(2010)''Raymond V Raymond(2010)''My Way(2010)''The Essential Mixes(2010)''Climax(2012)''Looking 4 Myself(2012)''Scream(2012)''Numb Remixes(2012)''Good Kisser(2014)''She Came To Give It To You(2014)''Rhythm City Volume One¡GCaught Up(2014)''Can U Help Me(2014)''Usher¡GRarities!(2014)''I Dont Mind(2014)','An American singer, songwriter, dancer, and actor. He rose to fame in the late 1990s with the release of his second album My Way, which spawned his first U.S. Billboard Hot 100 number-one hit, "Nice & Slow". The album has been certified 6-times platinum by the Recording Industry Association of America (RIAA). His follow-up album, 8701, produced the Billboard Hot 100 number one hits "U Remind Me" and "U Got It Bad".');
+INSERT INTO SINGER VALUES('F001','W009','Flo Rida','September-16-1979 ','2006','Mail on Sunday(2008)'' R.O.O.T.S.(2009)''Only One Flo (Part 1) (2010)''Wild Ones (2012)','Better known by his stage name Flo Rida (pronounced /flo? ?ra?d?/), is an American rapper from Carol City, Florida. He is perhaps best known for releasing a string of hit singles, such as his 2008 debut "Low", which was number one for 10 weeks in the United States and broke the record for digital download sales at the time of its release.');
+INSERT INTO SINGER VALUES('M002','W010','Mariah Carey','March-27-1969','1988','Mariah Carey (1990)''Emotions (1991)''Music Box (1993)''Merry Christmas (1994)''Daydream (1995)''Butterfly (1997)''Rainbow (1999)''Glitter (2001)''Charmbracelet (2002)''The Emancipation of Mimi (2005)''E=MC2 (2008)''Memoirs of an Imperfect Angel (2009)''Merry Christmas II You (2010)''Me. I Am Mariah... The Elusive Chanteuse (2014)','an American singer, songwriter, record producer, and occasional actress. She rose to prominence after releasing her self-titled debut studio album Mariah Carey in 1990; it went multiplatinum and spawned four consecutive number one singles on the U.S. Billboard Hot 100 chart.');
+
+
+
+INSERT INTO ALBUM VALUES('WMG001','A001','21(2011)','2011-01-26','358');
+INSERT INTO ALBUM VALUES('WMB002','A002','Trouble(2005)','2005-08-21','398');
+INSERT INTO ALBUM VALUES('WMB003','A002','Michael(2010)','2010-12-14','418');
+INSERT INTO ALBUM VALUES('WMB004','A002','Konvicted(2007)','2007-08-03','300');
+INSERT INTO ALBUM VALUES('WMB005','A002','Unexpected(2006)','2006','');
+INSERT INTO ALBUM VALUES('WMB006','A002','Beautiful(2009)','2009','');
+INSERT INTO ALBUM VALUES('WMB007','A002','Mr. International(2010)','2010-04-06','');
+INSERT INTO ALBUM VALUES('WMB008','A002','Right Now (Na Na Na)(2008)','2008-09-23','');
+INSERT INTO ALBUM VALUES('WMB009','A002','Koncrete (Mixtape)(2011)','2011','');
+INSERT INTO ALBUM VALUES('WMB010','A002','Freedom(2009)','2009-01-16','419');
+INSERT INTO ALBUM VALUES('WMBG01','B001','Cross Road(1994)','1994-09-20','');
+INSERT INTO ALBUM VALUES('WMBG02','B001','New Jersey(1988)','1988-11-24','328');
+INSERT INTO ALBUM VALUES('WMBG03','B001','Crush(2000)','2000-05-03','609');
+INSERT INTO ALBUM VALUES('WMBG04','B001','Keep The Faith(1992)','1992-11-03','318');
+INSERT INTO ALBUM VALUES('WMBG05','B001','Bounce(2002)','2002-11-30','318');
+INSERT INTO ALBUM VALUES('WMBG06','B001','Slippery When Wet(1986)','1986-08-18','');
+INSERT INTO ALBUM VALUES('WMBG07','B001','What About Now(2013)','2013-03-08','458');
+INSERT INTO ALBUM VALUES('WMBG08','B001','The Circle(2010)','2010-05-24','398');
+INSERT INTO ALBUM VALUES('WMB011','M001','Hands All Over(2010)','2010-06-22','429');
+INSERT INTO ALBUM VALUES('WMB012','M001','Overexposed(2012)','2012-04-17','489');
+INSERT INTO ALBUM VALUES('WMB013','M001','The Papercut Chronicles II(2011)','2011-06-11','439');
+INSERT INTO ALBUM VALUES('WMB014','N001','A Dozen Roses(2009)','2009-12-22','');
+INSERT INTO ALBUM VALUES('WMG002','N002','Pink Friday: Roman Reloaded(2012)','2012-02-14','459');
+INSERT INTO ALBUM VALUES('WMB015','P001','M.I.A.M.I.(2004)','2004-08-24','429');
+INSERT INTO ALBUM VALUES('WMB016','U001','Looking 4 Myself(2012)','2012-06-08','382');
+INSERT INTO ALBUM VALUES('WMB017','U001','Raymond v. Raymond(2010)','2010-11-22','419');
+INSERT INTO ALBUM VALUES('WMB018','U001','My Way (1997)','1997-09-16','319');
+INSERT INTO ALBUM VALUES('WMB019','U001','Confessions(2004)','2004-03-23','');
+INSERT INTO ALBUM VALUES('WMB020','U001','Versus(2010)','2010-07-13','');
+INSERT INTO ALBUM VALUES('WMB021','F001','Wild Ones(2012)','2011-07-03','439');
+INSERT INTO ALBUM VALUES('WMG003','M001','Charmbracelet(2002)','2002-11-22','419');
+
+
+
+INSERT INTO SONG VALUES('ADR01','WMG001','Rolling in the Deep','03:47');
+INSERT INTO SONG VALUES('AKL01','WMB002','Lonely','03:55');
+INSERT INTO SONG VALUES('AKMJH11','WMB003','Hold My Hand','03:36');
+INSERT INTO SONG VALUES('AKH02','WMB004','Mama Africa','04:25');
+INSERT INTO SONG VALUES('AKBL03','WMB005','look me in my eyes','03:16');
+INSERT INTO SONG VALUES('AKB04','WMB006','Beautiful','03:52');
+INSERT INTO SONG VALUES('AKKOB11','WMB007','Body bounce','03:52');
+INSERT INTO SONG VALUES('AKC05','WMB008','Clap again','05:10');
+INSERT INTO SONG VALUES('AKR06','WMB008','Right Now (Na Na Na)','04:00');
+INSERT INTO SONG VALUES('AKD07','WMB009','DO it','04:03');
+INSERT INTO SONG VALUES('AKS08','WMB010','Sunny Day','05:12');
+INSERT INTO SONG VALUES('BJA01','WMBG01','Always','04:44');
+INSERT INTO SONG VALUES('BJB02','WMBG02','Born to Be My Baby','03:55');
+INSERT INTO SONG VALUES('BJI03','WMBG03','Its My Life','03:44');
+INSERT INTO SONG VALUES('BJK04','WMBG04','Keep The Faith','05:45');
+INSERT INTO SONG VALUES('BJM05','WMBG05','Misunderstood','03:30');
+INSERT INTO SONG VALUES('BJO06','WMBG03','One Wild Night','04:18');
+INSERT INTO SONG VALUES('BJR07','WMBG06','Raise your hands','04:15');
+INSERT INTO SONG VALUES('BJT08','WMBG07','Thats What the Water Made Me','04:26');
+INSERT INTO SONG VALUES('BJW09','WMBG08','When We Were Beautiful','04:10');
+INSERT INTO SONG VALUES('M5M01','WMB010','Misery','03:36');
+INSERT INTO SONG VALUES('M5O02','WMB011','One More Night ','03:39');
+INSERT INTO SONG VALUES('M5P03','WMB011','Payphone','03:51');
+INSERT INTO SONG VALUES('M5GCH04','WMB013','Stereo Hearts','03:31');
+INSERT INTO SONG VALUES('NYH01','WMB014','Heartbreakers','04:02');
+INSERT INTO SONG VALUES('NYI02','WMB014','I Feel Good','03:25');
+INSERT INTO SONG VALUES('NMR01','WMG002','Right by My Side','04:25');
+INSERT INTO SONG VALUES('NMS02','WMG002','Starships','03:30');
+INSERT INTO SONG VALUES('PBD01','WMB015','Dirty','04:36');
+INSERT INTO SONG VALUES('PBS02','WMB015','Shake It Up','03:14');
+INSERT INTO SONG VALUES('USL01','WMB016','Lessons for the Lover','05:07');
+INSERT INTO SONG VALUES('USM02','WMB017','More','03:49');
+INSERT INTO SONG VALUES('USM03','WMB018','My Way ','03:38');
+INSERT INTO SONG VALUES('UST04','WMB019','Thats What Its Made For','04:37');
+INSERT INTO SONG VALUES('USPBT05','WMB020','DJ Got Us Fallin in Love','03:40');
+INSERT INTO SONG VALUES('FRG01','WMB021','Good Feeling','04:06');
+INSERT INTO SONG VALUES('FRI02','WMB021','I Cry','03:42');
+INSERT INTO SONG VALUES('FRL03','WMB021','Let It Roll','03:14');
+INSERT INTO SONG VALUES('FRT04','WMB021','Thinking Of You','03:40');
+INSERT INTO SONG VALUES('FRW05','WMB021','Whistle','03:45');
+INSERT INTO SONG VALUES('FRW06','WMB021','Wild Ones','03:53');
+INSERT INTO SONG VALUES('MKB01','WMG003','Boy (I Need You)','05:14');
+INSERT INTO SONG VALUES('MKC02','WMBG03','Clown','03:17');
+INSERT INTO SONG VALUES('MKI03','WMBG03','I Only Wanted','03:38');
+INSERT INTO SONG VALUES('MKT04','WMBG03','Through the Rain','04:48');
+INSERT INTO SONG VALUES('MKY05','WMBG03','You Got Me','04:22');
+INSERT INTO SONG VALUES('MKY06','WMBG03','Yours','05:06');
